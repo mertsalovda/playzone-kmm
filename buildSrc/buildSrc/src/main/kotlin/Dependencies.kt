@@ -1,5 +1,11 @@
 object Dependencies {
 
+    object Plugin {
+        const val multiplatformSetup = "multiplatform-setup"
+        const val multiplatformComposeSetup = "multiplatform-compose-setup"
+        const val androidSetup = "android-setup"
+    }
+
     object Kodein {
         const val core = "org.kodein.di:kodein-di:7.1.0"
     }

@@ -1,4 +1,4 @@
 plugins {
-    id("multiplatform-compose-setup")
-    id("android-setup")
+    id(Dependencies.Plugin.multiplatformComposeSetup)
+    id(Dependencies.Plugin.androidSetup)
 }

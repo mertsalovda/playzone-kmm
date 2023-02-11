@@ -11,7 +11,7 @@ import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.singleton
 
-private const val host = "http://10.0.2.2:8080" // ip для эмулятора
+private const val apiUrl = "http://10.0.2.2:8080" // ip для эмулятора
 
 internal val ktorModule = DI.Module("ktorModule") {
     bind<HttpClient>() with singleton {
@@ -38,7 +38,7 @@ internal val ktorModule = DI.Module("ktorModule") {
             }
 
             defaultRequest {
-                url(host)
+                url(apiUrl)
                 header("Content-Type", "application/json; charset=UTF-8")
             }
         }

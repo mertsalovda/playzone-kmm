@@ -20,7 +20,7 @@ kotlin {
 
                 api(Dependencies.Kodein.core)
 
-                api(Dependencies.SqlDelight.core)
+               // api(Dependencies.SqlDelight.core)
             }
         }
 
@@ -34,14 +34,14 @@ kotlin {
         iosMain {
             dependencies {
                 implementation(Dependencies.Ktor.ios)
-                implementation(Dependencies.SqlDelight.ios)
+              //  implementation(Dependencies.SqlDelight.ios)
             }
         }
 
         desktopMain {
             dependencies {
                 implementation(Dependencies.Ktor.okhttp)
-                implementation(Dependencies.SqlDelight.desktop)
+             //   implementation(Dependencies.SqlDelight.desktop)
             }
         }
     }

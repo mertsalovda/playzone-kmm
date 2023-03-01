@@ -1,15 +1,15 @@
 package database
 
-import com.squareup.sqldelight.android.AndroidSqliteDriver
-import com.squareup.sqldelight.db.SqlDriver
+//import com.squareup.sqldelight.android.AndroidSqliteDriver
+//import com.squareup.sqldelight.db.SqlDriver
 import PlatformConfiguration
 
 actual class DbDriverFactory actual constructor(private val platformConfiguration: PlatformConfiguration) {
-    actual fun createDriver(schema: SqlDriver.Schema, name: String): SqlDriver {
-        return AndroidSqliteDriver(
-            schema = schema,
-            context = platformConfiguration.androidContext,
-            name = name
-        )
-    }
+//    actual fun createDriver(schema: SqlDriver.Schema, name: String): SqlDriver {
+//        return AndroidSqliteDriver(
+//            schema = schema,
+//            context = platformConfiguration.androidContext,
+//            name = name
+//        )
+//    }
 }
